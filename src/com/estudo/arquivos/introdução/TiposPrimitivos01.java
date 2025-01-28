@@ -1,4 +1,4 @@
-package java.estudo.arquivos.introdução;
+package com.estudo.arquivos.introdução;
 
 public class TiposPrimitivos01 {
     public static void main(String[] args) {

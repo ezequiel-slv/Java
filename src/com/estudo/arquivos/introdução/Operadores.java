@@ -1,4 +1,4 @@
-package java.estudo.arquivos.introdução;
+package com.estudo.arquivos.introdução;
 
 public class Operadores {
     public static void main(String[] args) {
