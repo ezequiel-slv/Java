@@ -1,4 +1,4 @@
-package com.estudo.arquivos.introdução;
+package com.estudo.arquivos.introducao;
 import java.util.Scanner;
 
 public class EstruturasCondicionais02 {

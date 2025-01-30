@@ -1,4 +1,4 @@
-package com.estudo.arquivos.introdução;
+package com.estudo.arquivos.introducao;
 
 public class EstruturasCondicionais01 {
     public static void main(String[] args) {
