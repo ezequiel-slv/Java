@@ -8,4 +8,8 @@ public class Calculadora {
     public void subDoisNumeros(){
         System.out.println(30 - 20);
     }
+
+    public void multDoisNumeros(int num, int num2){
+        System.out.println(num * num2);
+    }
 }
