@@ -8,5 +8,10 @@ public class TesteCalculadora03 {
 
        int result = calculadora.divDoisNumeros(6, 2);
         System.out.println(result);
+        System.out.println("----------");
+        int resultDois = calculadora.divDoisNumerosTipoDois(10, 0);
+        System.out.println(resultDois);
+        System.out.println("----------");
+        calculadora.divDoisNumerosTipoTres(10, 0);
     }
 }
