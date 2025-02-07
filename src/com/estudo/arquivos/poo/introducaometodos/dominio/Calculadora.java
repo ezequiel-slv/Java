@@ -36,4 +36,13 @@ public class Calculadora {
         }
         System.out.println(num1/num2);
     }
+
+    public void variavelDominio (int num1, int num2){
+        num1 = 20;
+        num2 = 5;
+
+        System.out.println("Variavel do dominio");
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+    }
 }
