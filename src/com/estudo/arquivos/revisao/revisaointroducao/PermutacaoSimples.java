@@ -1,4 +1,4 @@
-package com.estudo.arquivos.revisao;
+package com.estudo.arquivos.revisao.revisaointroducao;
 /*Exercício 1
 Quantos arranjos de 3 letras distintas podem ser formados a partir das letras {A,B,C,D,E}?
 dada a formula: A(n,k)=n!/(n-k)!

@@ -1,4 +1,4 @@
-package com.estudo.arquivos.revisao;
+package com.estudo.arquivos.revisao.revisaointroducao;
 
 public class exeLacoDeRepeticao {
     public static void main(String[] args) {

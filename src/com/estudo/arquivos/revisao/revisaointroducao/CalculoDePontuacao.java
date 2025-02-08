@@ -1,4 +1,4 @@
-package com.estudo.arquivos.revisao;
+package com.estudo.arquivos.revisao.revisaointroducao;
 import java.util.Scanner;
 /**
  Iniciante: Pontuação total é menor que 50 ou idade menor que 18.

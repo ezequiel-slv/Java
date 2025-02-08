@@ -1,4 +1,4 @@
-package com.estudo.arquivos.revisao;
+package com.estudo.arquivos.revisao.revisaointroducao;
 import java.util.Scanner; 
 
 public class RevisaoSwich02 {
