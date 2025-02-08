@@ -19,5 +19,9 @@ public class TesteEstudante01 {
 
         impressora.imprime(estudante01);
         impressora.imprime(estudante02);
+
+        //referencia "estudante.nome" alterada
+        impressora.imprime(estudante01);
+        impressora.imprime(estudante02);
     }
 }
