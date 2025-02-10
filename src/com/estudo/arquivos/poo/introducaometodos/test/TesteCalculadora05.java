@@ -7,7 +7,7 @@ public class TesteCalculadora05 {
         Calculadora calculadora = new Calculadora();
         int[] numeros = {1, 2, 3, 4, 5};
         calculadora.somaArray(numeros);
-        calculadora.ArrayVarArgs(1,2,3,4,5,6,7,8,9,10);
+        calculadora.ArrayVarArgs(1,2,3,4,5,6,7,8,9);
     }
 
 }
