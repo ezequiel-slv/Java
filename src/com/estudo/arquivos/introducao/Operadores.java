@@ -34,7 +34,7 @@ public class Operadores {
         float valorPlaystation = 4000;
 
         boolean isPlaystationCompraProvavel = contaCorrente > valorPlaystation || contaPoupanca > valorPlaystation;
-        System.out.println("isPlaystationCompraProvavel" + isPlaystationCompraProvavel);
+        System.out.println("isPlaystationCompraProvavel: " + isPlaystationCompraProvavel);
 
         // atribuição
 
@@ -49,8 +49,8 @@ public class Operadores {
 
         //outra forma de atribuir: ++ e --
         int idadeAluno = 20;
-        idadeAluno += 1;
-        idadeAluno ++;
+        idadeAluno +=1;
+        idadeAluno --;
         System.out.println(idadeAluno);
 
 
