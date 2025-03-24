@@ -25,8 +25,8 @@ public class Operadores {
 
         boolean isDentroDaLeiMaiorQueTrinta = idade >= 30 && salario >= 3500;
         boolean isDentroDaLeiMenorQueTrinta = idade < 30 && salario >= 3500;
-        System.out.println("isDentroDaLeiMaiorQueTrinta" + isDentroDaLeiMaiorQueTrinta);
-        System.out.println("isDentroDaLeiMenorQueTrinta" + isDentroDaLeiMenorQueTrinta);
+        System.out.println("isDentroDaLeiMaiorQueTrinta: " + isDentroDaLeiMaiorQueTrinta);
+        System.out.println("isDentroDaLeiMenorQueTrinta: " + isDentroDaLeiMenorQueTrinta);
 
         // || (OR)
         double contaCorrente = 200;
