@@ -11,6 +11,8 @@ public class TesteCelular {
         celular1.preco = 7.000;
         celular1.ano = 2025;
 
+        celular1 = celular2;
+
         celular2.marca = "Galaxy S23 Ultra";
         celular2.preco = 7.500;
         celular2.ano = 2023;
