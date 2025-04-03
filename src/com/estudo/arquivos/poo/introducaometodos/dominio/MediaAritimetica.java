@@ -8,4 +8,9 @@ public class MediaAritimetica {
         int num3 = 15;
         System.out.println((num1 + num2 + num3)/3);
     }
+
+    public void calcularMediaDois(int num1, int num2, int num3, int num4){
+        System.out.println((num2 + num2 + num3 + num4)/4);
+
+    }
 }
