@@ -22,4 +22,12 @@ public class CalculadoraRev {
         }
         System.out.println("Não existe divisão por zero");
     }
+
+    public void imprimeValor(int numero1, int numero2){
+        numero1 = 30;
+        numero2 = 20;
+        System.out.println("Dentro do dominio");
+        System.out.println("num1: "+ numero1);
+        System.out.println("num1: "+ numero2);
+    }
 }
