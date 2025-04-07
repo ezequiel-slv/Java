@@ -30,4 +30,22 @@ public class CalculadoraRev {
         System.out.println("num1: "+ numero1);
         System.out.println("num1: "+ numero2);
     }
+
+    public void somaArrayVarargs (int ... numeros){
+        System.out.println("Array com varargs");
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaArray (int[] numeros){
+        System.out.println("Array normal");
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println(soma);
+    }
 }
