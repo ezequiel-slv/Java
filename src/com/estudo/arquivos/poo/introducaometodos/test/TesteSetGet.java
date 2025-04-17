@@ -10,7 +10,7 @@ public class TesteSetGet {
         pessoa.setIdade(22);
         System.out.println(pessoa.getNome());
         System.out.println(pessoa.getIdade());
-        //pessoa.imprime();
+        pessoa.imprime();
 
     }
 }
