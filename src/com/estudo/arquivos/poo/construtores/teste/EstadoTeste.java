@@ -1,0 +1,11 @@
+package com.estudo.arquivos.poo.construtores.teste;
+
+import com.estudo.arquivos.poo.construtores.dominio.Estado;
+
+public class EstadoTeste {
+    public static void main(String[] args) {
+        Estado estado = new Estado("Maranhão", "São Luis", 400, 217, 99);
+
+        estado.imprime();
+    }
+}
