@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.modificadoresestatico.dominio;
+package com.estudo.arquivos.poo.estatico.metodoestatico.dominio;
 
 public class Anime {
     private final String nome;
@@ -15,5 +15,9 @@ public class Anime {
         System.out.println("Anime: " + this.nome);
         System.out.println("Episodeos: " + this.episodeos);
         System.out.println("Tipo: " + tipo);
+    }
+
+    public static void setTipo(String tipo){
+        Anime.tipo = tipo;
     }
 }
