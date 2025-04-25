@@ -23,15 +23,15 @@ public class Curso {
         System.out.println("Horas de curso: " + this.horas);
         System.out.println("Tecnologia: " + tecnologia);
         System.out.println("Total de cursos: " + totalCursos);
-        System.out.println("Contador de cursos: " + contadorCursos);
+        contadorCursos++;
     }
 
-    public static void totalCursos(int totalCursos){
+    public static void setTotalCursos(int totalCursos){
       Curso.totalCursos = totalCursos;
     }
 
-    public static void setContadorCursos(int contadorCursos){
-      Curso.contadorCursos = contadorCursos;
+    public static int getContadorCursos(){
+        return contadorCursos;
     }
 
 }
