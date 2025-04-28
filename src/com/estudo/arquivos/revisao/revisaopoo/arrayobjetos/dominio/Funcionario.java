@@ -15,7 +15,7 @@ public class Funcionario {
     }
 
     public void acrescimo(){
-        double acresc = salario + (salario * 1.15);
+        double acresc = salario * 1.15;
         System.out.printf("Salário com acrescimo: %.3fR$\n", acresc);
     }
 }
