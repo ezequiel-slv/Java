@@ -14,17 +14,18 @@ public class Produto {
         System.out.println("Nome do produto: " + this.nome);
         System.out.printf("Preço: %.2f\n", this.preco);
         if (categoria != null){
-            System.out.println(categoria.getNome());
+            System.out.println("Categoria: " + categoria.getNome());
         }else{
             System.out.println("Categoria não encontrada");
         }
+        System.out.println("--------------");
     }
 
     public void setNome(String nome){
         this.nome = nome;
     }
 
-    public String getNome(String nome){
+    public String getNome(){
         return nome;
     }
 
