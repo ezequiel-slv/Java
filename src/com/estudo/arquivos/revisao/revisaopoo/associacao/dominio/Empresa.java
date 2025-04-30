@@ -10,7 +10,12 @@ public class Empresa {
 
     public void imprime(){
         System.out.println(this.nome);
+        if (funcionarios != null) {
+            for (Funcionario funcionario : funcionarios) {
+                System.out.println(funcionario.getNome());
+            }
         }
+    }
 
     public void setNome(String nome){
         this.nome = nome;

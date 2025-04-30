@@ -12,19 +12,14 @@ public class TesteFuncionario {
         Empresa empresa = new Empresa("Tech Soluções");
 
         System.out.println("--- Funcionarios ---");
-
-
-        funcionario1.setEmpresa(empresa);
-        funcionario2.setEmpresa(empresa);
-        funcionario3.setEmpresa(empresa);
-
-        funcionario1.imprime();
-        funcionario2.imprime();
-        funcionario3.imprime();
+        
+        empresa.setFuncionarios(funcionarios);
+        for (Funcionario funcionario : funcionarios) {
+            funcionario.imprime();
+        }
 
         System.out.println("--- Empresa ---");
 
-        empresa.setFuncionarios(funcionarios);
         empresa.imprime();
 
     }
