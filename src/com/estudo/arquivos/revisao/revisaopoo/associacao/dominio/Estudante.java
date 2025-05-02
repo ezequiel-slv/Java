@@ -9,11 +9,15 @@ public class Estudante {
         this.nome = nome;
     }
 
-    public void imprime(){
-        System.out.println(this.nome);
-        if (seminario != null){
-            System.out.println(seminario.getNome());
-        }
+    public Estudante(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public Estudante(String nome, int idade, Seminario seminario){
+        this.nome = nome;
+        this.idade = idade;
+        this.seminario = seminario;
     }
 
     public void setNome(String nome){
@@ -25,7 +29,7 @@ public class Estudante {
     }
 
     public void setIdade(int idade){
-        this.idade = idade;
+        this.nome = nome;
     }
 
     public int getIdade(){
@@ -36,4 +40,7 @@ public class Estudante {
         this.seminario = seminario;
     }
 
+    public Seminario getSeminario(){
+        return seminario;
+    }
 }
