@@ -1,6 +1,8 @@
 package com.estudo.arquivos.revisao.revisaopoo.associacao.teste;
 
 import com.estudo.arquivos.revisao.revisaopoo.associacao.dominio.Estudante;
+import com.estudo.arquivos.revisao.revisaopoo.associacao.dominio.Local;
+import com.estudo.arquivos.revisao.revisaopoo.associacao.dominio.Professor;
 import com.estudo.arquivos.revisao.revisaopoo.associacao.dominio.Seminario;
 
 public class TesteSeminario {
@@ -13,13 +15,15 @@ public class TesteSeminario {
         Seminario seminario2 = new Seminario("Arco do Entrentenimento");
         Seminario seminario3 = new Seminario("Arco do Treinamento Hashira");
         Seminario[] seminarios = {seminario1, seminario2, seminario3};
+        Local local = new Local("Japão");
+        Professor professor = new Professor("Rengoku", "Respiração das Chamas");
 
         System.out.println("Estuante 1");
         estudante1.setSeminario(seminario1);
         estudante1.imprime();
         System.out.println("---------");
 
-        System.out.println("Estuante 1");
+        System.out.println("Estuante 2");
         estudante2.setSeminario(seminario2);
         estudante2.imprime();
         System.out.println("---------");
@@ -36,6 +40,15 @@ public class TesteSeminario {
         }
         System.out.println("--------");
 
+        System.out.println("Professor ministra varios seminários");
+        professor.setSeminarios(seminarios);
+        for (Seminario seminario : seminarios) {
+            seminario.imprime();
+        }
+        System.out.println("Seminario tem local");
+        seminario1.setLocal(local);
+        seminario1.imprime();
+        System.out.println("--------");
 
     }
 }

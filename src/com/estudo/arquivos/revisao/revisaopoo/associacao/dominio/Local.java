@@ -1,17 +1,18 @@
 package com.estudo.arquivos.revisao.revisaopoo.associacao.dominio;
 
 public class Local {
-    private String endereco;
+    private String local;
 
-    public void imprime(){
-        System.out.println(this.endereco);
+
+    public Local(String local){
+        this.local = local;
     }
 
-    public void setEndereco(String nome){
-        this.endereco = endereco;
+    public void setLocal(String local){
+        this.local = local;
     }
 
-    public String getEndereco(){
-        return endereco;
+    public String getLocal(){
+        return local;
     }
 }

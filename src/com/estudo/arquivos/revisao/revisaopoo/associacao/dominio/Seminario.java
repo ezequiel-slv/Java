@@ -12,13 +12,12 @@ public class Seminario {
     public void imprime(){
         System.out.println(this.nome);
         if (local != null){
-            System.out.println(local.getEndereco());
+            System.out.println(local.getLocal());
         }
         if (estudantes != null){
             for (Estudante estudante : estudantes) {
                 System.out.println(estudante.getNome());
             }
-
         }
     }
 

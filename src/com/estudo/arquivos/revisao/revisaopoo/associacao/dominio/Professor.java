@@ -5,12 +5,14 @@ public class Professor {
     private String especialidade;
     private Seminario[] seminarios;
 
-    public Professor(String nome){
+    public Professor(String nome, String especialidade){
         this.nome = nome;
+        this.especialidade = especialidade;
     }
 
     public void imprime(){
         System.out.println(this.nome);
+        System.out.println(this.especialidade);
         if (seminarios != null){
             for (Seminario seminario : seminarios){
                 System.out.println(seminario.getNome());
