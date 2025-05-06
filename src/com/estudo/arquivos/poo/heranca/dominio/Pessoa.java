@@ -1,9 +1,9 @@
 package com.estudo.arquivos.poo.heranca.dominio;
 
 public class Pessoa {
-    private String nome;
-    private int idade;
-    private Endereco endereco;
+    protected String nome;
+    protected int idade;
+    protected Endereco endereco;
 
 
     public void imprime(){

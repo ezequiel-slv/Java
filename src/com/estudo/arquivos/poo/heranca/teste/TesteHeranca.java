@@ -14,7 +14,7 @@ public class TesteHeranca {
         pessoa.setIdade(20);
         pessoa.setEndereco(endereco);
         pessoa.imprime();
-        
+
 
         Funcionario funcionario = new Funcionario();
         funcionario.setNome("Ezeuiel");
@@ -24,6 +24,7 @@ public class TesteHeranca {
         funcionario.setEndereco(endereco);
         funcionario.setSalario(2500);
         funcionario.imprime();
+        funcionario.imprime2();
 
     }
 }
