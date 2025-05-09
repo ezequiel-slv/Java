@@ -12,7 +12,7 @@ public class Pagamento {
     }
 
     public void processarPagamento(){
-        System.out.println("Pagamento via cartão de crédito: R$..." + getValor());
+        System.out.println("Pagamento via cartão de crédito: R$" + getValor());
     }
 
     public double getValor() {

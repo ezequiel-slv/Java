@@ -5,5 +5,4 @@ public class CartaoCredito extends Pagamento{
     public CartaoCredito(double valor) {
         super(valor);
     }
-
 }
