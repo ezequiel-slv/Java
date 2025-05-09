@@ -1,6 +1,22 @@
 package com.estudo.arquivos.poo.enumeracao.dominio;
 
 public enum TipoCliente {
-    PESSOA_FISICA,
-    PESSOA_JURIDICA
+    PESSOA_FISICA(1, "Pessoa Fisica"),
+    PESSOA_JURIDICA(2, "Pessoa Juridica");
+    private final int valor;
+    private final String tipo;
+
+
+    TipoCliente(int valor, String tipo) {
+        this.valor = valor;
+        this.tipo = tipo;
+    }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
 }
