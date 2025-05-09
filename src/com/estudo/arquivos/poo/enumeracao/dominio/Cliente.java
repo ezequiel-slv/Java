@@ -2,8 +2,8 @@ package com.estudo.arquivos.poo.enumeracao.dominio;
 
 public class Cliente {
     private String nome;
-    private TipoCliente tipoCliente;
-    private TipoPagamento tipoPagamento;
+    private final TipoCliente tipoCliente;
+    private final TipoPagamento tipoPagamento;
 
     public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
@@ -22,13 +22,5 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public TipoCliente getTipoCliente() {
-        return tipoCliente;
-    }
-
-    public void setTipoCliente(TipoCliente tipoCliente) {
-        this.tipoCliente = tipoCliente;
     }
 }

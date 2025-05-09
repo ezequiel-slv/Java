@@ -9,9 +9,15 @@ public class TesteCliente {
         Cliente cliente1 = new Cliente("Cliente", TipoCliente.PESSOA_FISICA, TipoPagamento.CREDITO);
         Cliente cliente2 = new Cliente("Cliente", TipoCliente.PESSOA_JURIDICA, TipoPagamento.DEBITO);
         Cliente[] clientes = {cliente1, cliente2};
+
         for (Cliente cliente : clientes) {
             System.out.println(cliente);
         }
+        System.out.println(TipoPagamento.CREDITO.calcularDesconto(300));
+        System.out.println(TipoPagamento.DEBITO.calcularDesconto(300));
+
+        TipoCliente tipoCliente = TipoCliente.tipoClienteTemTipo("Pessoa Juridica");
+        System.out.println(tipoCliente);
 
     }
 }

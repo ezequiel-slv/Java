@@ -12,6 +12,14 @@ public enum TipoCliente {
         this.tipo = tipo;
     }
 
+    public static TipoCliente tipoClienteTemTipo(String tipo){
+        for (TipoCliente tipoCliente : values()){
+            if (tipoCliente.getTipo().equals(tipo)){
+                return tipoCliente;
+            }
+        }return null;
+    }
+
     public int getValor() {
         return valor;
     }
