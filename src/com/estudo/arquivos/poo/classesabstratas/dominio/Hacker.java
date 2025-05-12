@@ -10,7 +10,7 @@ public class Hacker extends Funcionario {
 
     @Override
     public String toString() {
-        return "Hacker: " + nome + " | " + "Linguagem: " + linguagem + " | " + "Salario: "+ salario + " | " + "Tipo: " + tipo;
+        return "Hacker: " + nome + " | " + "Linguagem: " + linguagem + " | "  + "Tipo: "+ tipo + " | " + "Salario: " + salario;
     }
 
     @Override
