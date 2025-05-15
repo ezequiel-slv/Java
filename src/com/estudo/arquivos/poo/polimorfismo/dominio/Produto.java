@@ -1,6 +1,6 @@
 package com.estudo.arquivos.poo.polimorfismo.dominio;
 
-public abstract class Produto {
+public abstract class Produto implements Taxavel{
     protected String nome;
     protected double valor;
 
