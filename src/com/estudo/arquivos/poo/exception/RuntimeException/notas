@@ -1,4 +1,4 @@
-IllegalStateException
-ArithmeticException
-UnsupportedOperationException
+IllegalStateException .
+ArithmeticException .
+UnsupportedOperationException .
 ConcurrentModificationException
