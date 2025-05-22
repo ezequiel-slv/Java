@@ -13,7 +13,7 @@ public class UnsupportedOperationException {
         List<String> lista = Collections.unmodifiableList(List.of("A", "B", "C"));
 
         System.out.println(lista);
-        //lista.add("D");
+        //lista.add("D"); //UnsupportedOperationException
 
         /*
         Usave o UnsupportedOperationException para impedir alterações que podem comprometer

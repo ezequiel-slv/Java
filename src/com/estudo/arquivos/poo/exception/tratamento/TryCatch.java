@@ -1,0 +1,22 @@
+package com.estudo.arquivos.poo.exception.tratamento;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TryCatch {
+    public static void main(String[] args) {
+        criandoArquivo();
+    }
+
+    public static void criandoArquivo(){
+        File file = new File("arquivo\\file.txt");
+
+        try{
+            boolean isCreat = file.createNewFile();
+            System.out.println("Arquivo criado: " + isCreat);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+}

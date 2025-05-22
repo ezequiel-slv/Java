@@ -1,7 +1,5 @@
 package com.estudo.arquivos.poo.exception.dominio;
 
-import com.estudo.arquivos.poo.exception.Operacao;
-
 public class MetodoNaoSuportado implements Operacao {
 
     @Override
