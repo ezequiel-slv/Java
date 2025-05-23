@@ -9,7 +9,7 @@ public class TryCatch {
     }
 
     public static void criandoArquivo(){
-        File file = new File("arquivo\\file.txt");
+        File file = new File("arquivo" + File.separator +"file.txt");
 
         try{
             boolean isCreat = file.createNewFile();
