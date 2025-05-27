@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.exception.error.teste;
+package com.estudo.arquivos.poo.exception.error;
 
 public class StackOverFlowTeste {
     public static void main(String[] args) {
