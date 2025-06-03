@@ -4,13 +4,16 @@ import java.util.Scanner;
 
 public class Wrappers {
     public static void main(String[] args) {
-       // AutoBoxing();
-       // Unboxing();
-       // ConversaoTipo1();
-        //ConversaoTipo2();
-        //ComparacaoTipo();
-        //OperacoesComWrappers();
-        Character();
+       AutoBoxing();
+       Unboxing();
+       ConversaoTipo1();
+       ConversaoTipo2();
+       ComparacaoTipo();
+       OperacoesComWrappers();
+       Character();
+       Boolean();
+       MetodosUtilitarios();
+       Nulo();
     }
 
     public static void AutoBoxing(){
@@ -65,6 +68,7 @@ public class Wrappers {
     }
 
     public static void ConversaoTipo1(){
+        System.out.println("Conversão tipo");
 
         Byte byteClass = Byte.valueOf(Byte.toString((byte) 8));
         System.out.println("Valor: " + byteClass +  " convertido para String ");
@@ -78,6 +82,7 @@ public class Wrappers {
 
     }
     public static void ConversaoTipo2(){
+        System.out.println("Conversão tipo 2");
         Scanner entrada1 = new Scanner(System.in);
 
         System.out.println("Digite um número");
@@ -90,6 +95,8 @@ public class Wrappers {
     }
 
     public static void ComparacaoTipo(){
+        System.out.println("Comparação tipo");
+
         Scanner entrada2 = new Scanner(System.in);
 
         System.out.println("Digite um número inteiro: ");
@@ -109,6 +116,8 @@ public class Wrappers {
     }
 
     public static void OperacoesComWrappers(){
+        System.out.println("Operação com wrappers");
+
         Scanner entrada3 = new Scanner(System.in);
 
         System.out.println("Digite um número");
@@ -135,6 +144,8 @@ public class Wrappers {
     }
 
     public static void Character(){
+        System.out.println("Character");
+
         Scanner entrada4 = new Scanner(System.in);
 
         System.out.println("Digite uma letra (minúscula): ");
@@ -156,5 +167,51 @@ public class Wrappers {
                 System.out.println("Erro: Não é uma letra");
             }
         entrada4.close();
+    }
+
+    public static void Boolean(){
+        System.out.println("Boolean");
+
+        Scanner entrada5 = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        int num = entrada5.nextInt();
+
+        Boolean numero = num > 0;
+
+        System.out.println(numero);
+        entrada5.close();
+
+    }
+
+    public static void MetodosUtilitarios(){
+        System.out.println("Metodos utilitarios");
+
+        Integer num = Integer.parseInt("8");
+        System.out.println(num);
+
+        Double doubleW = Double.valueOf(num);
+        System.out.println(doubleW);
+
+        Boolean booleanW = Character.isDigit(num);
+        System.out.println(booleanW);
+
+
+    }
+
+    public static void Nulo(){
+        System.out.println("Nulo");
+
+        Scanner entrada6 = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        Double doubleW = entrada6.nextDouble();
+
+        double doublePrimitivo = doubleW;
+
+        System.out.println(doublePrimitivo);
+        entrada6.close();
+
+
     }
 }
