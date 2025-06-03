@@ -8,7 +8,9 @@ public class Wrappers {
        // Unboxing();
        // ConversaoTipo1();
         //ConversaoTipo2();
-        ComparacaoTipo();
+        //ComparacaoTipo();
+        //OperacoesComWrappers();
+        Character();
     }
 
     public static void AutoBoxing(){
@@ -76,33 +78,83 @@ public class Wrappers {
 
     }
     public static void ConversaoTipo2(){
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada1 = new Scanner(System.in);
 
         System.out.println("Digite um número");
-        String numero = entrada.nextLine();
+        String numero = entrada1.nextLine();
 
 
         Integer integer = Integer.valueOf(numero);
         System.out.println(integer);
-        entrada.close();
+        entrada1.close();
     }
 
     public static void ComparacaoTipo(){
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada2 = new Scanner(System.in);
 
         System.out.println("Digite um número inteiro: ");
-        int valor1 = entrada.nextInt();
+        int valor1 = entrada2.nextInt();
 
         System.out.println("Digite mais um número inteiro: ");
-        int valor2 = entrada.nextInt();
+        int valor2 = entrada2.nextInt();
 
         Integer integer1 = valor1;
         Integer integer2 = valor2;
-        entrada.close();
+        entrada2.close();
 
         if (integer1.equals(integer2)){
             System.out.println("Iguais");
         }
         System.out.println("Diferentes");
+    }
+
+    public static void OperacoesComWrappers(){
+        Scanner entrada3 = new Scanner(System.in);
+
+        System.out.println("Digite um número");
+        double num1 = entrada3.nextDouble();
+
+        System.out.println("Digite outro número");
+        double num2 = entrada3.nextDouble();
+
+        Double num1W = num1;
+        Double num2W = num2;
+
+        Double somaW = num1W + num2W;
+        System.out.println(somaW);
+        Double subW = num1W - num2W;
+        System.out.println(subW);
+        Double multW = num1W * num2W;
+        System.out.println(multW);
+        Double divW = num1W / num2W;
+        if (num2W == 0){
+            System.out.println("Número inválido: Não existe divisão por zero");
+        }
+        System.out.println(divW);
+
+    }
+
+    public static void Character(){
+        Scanner entrada4 = new Scanner(System.in);
+
+        System.out.println("Digite uma letra (minúscula): ");
+        char letra = entrada4.next().charAt(0);
+
+
+
+        if (Character.isLetter(letra)){
+
+            letra = Character.toLowerCase(letra);
+
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+                System.out.println("Vogal");
+            } else {
+                System.out.println("Consoante");
+            }
+
+        }else {
+                System.out.println("Erro: Não é uma letra");
+            }
+        entrada4.close();
     }
 }
