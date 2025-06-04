@@ -1,6 +1,6 @@
 package com.estudo.arquivos.poo.classesutilitarias.strings;
 
-public class Imutabilidade {
+public class StringPrt01 {
     public static void main(String[] args) {
         String nome = "Ezequiel";
         String nome2 = "Ezequiel";
