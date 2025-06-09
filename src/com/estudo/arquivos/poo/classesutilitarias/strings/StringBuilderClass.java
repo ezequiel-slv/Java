@@ -1,6 +1,6 @@
 package com.estudo.arquivos.poo.classesutilitarias.strings;
 
-public class StringBuilder {
+public class StringBuilderClass {
     public static void main(String[] args) {
         String();
         StringBuilder02();
@@ -13,15 +13,16 @@ public class StringBuilder {
     }
 
     public static void StringBuilder02(){
-        java.lang.StringBuilder nome = new java.lang.StringBuilder("Ezy");
-        nome.append(" Slv");
+        StringBuilder nome = new StringBuilder("Ezy");
+        nome.append("Slv");
 
         nome.reverse();
         nome.reverse();
-        String sub = nome.substring(0,2);
-        nome.delete(0,1);
-        System.out.println(nome);
+        String sub = nome.substring(0,3);
+        nome.delete(0,3);
         System.out.println(sub);
+        System.out.println(nome);
+
 
 
 

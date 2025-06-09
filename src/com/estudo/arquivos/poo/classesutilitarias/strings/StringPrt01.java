@@ -4,7 +4,6 @@ public class StringPrt01 {
     public static void main(String[] args) {
         String nome = "Ezequiel";
         String nome2 = "Ezequiel";
-
         // Tanto a referência nome e nome2 vão apontar para a mesma String
 
 

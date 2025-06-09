@@ -13,17 +13,12 @@ public class Desempenho {
         StringBuilder(100_000);
         fim = System.currentTimeMillis();
         System.out.println("Tempo de execução da String Builder: " + (fim - inicio) + "ms");
-
-        inicio = System.currentTimeMillis();
-        StringBuffer(100_000);
-        fim = System.currentTimeMillis();
-        System.out.println("Tempo de execução da String Buffer: " + (fim - inicio) + "ms");
     }
 
     public static void String(int tamanho){
         String numero = "";
         for (int i = 0; i < tamanho; i++) {
-            numero += numero;
+            numero += i;
         }
     }
 
@@ -33,13 +28,4 @@ public class Desempenho {
             sb.append(i);
         }
     }
-
-    public static void StringBuffer(int tamanho){
-        StringBuffer sbf = new StringBuffer(tamanho);
-        for (int i = 0; i < tamanho; i++) {
-            sbf.append(i);
-        }
-    }
-
-
 }
