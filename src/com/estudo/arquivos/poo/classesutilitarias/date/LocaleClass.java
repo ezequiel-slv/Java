@@ -6,10 +6,12 @@ import java.util.Locale;
 
 public class LocaleClass {
     public static void main(String[] args) {
-        Locale localeEUA = new Locale("en", "US");
-        Locale localeBrazil = new Locale("pt", "BR");
-        Locale localeEspanha = new Locale("es", "ES");
-        Locale localeJapao = new Locale("ja", "JP");
+        Locale localeEUA = Locale.of("en", "US");
+        Locale localeBrazil = Locale.of("pt", "BR");
+        Locale localeEspanha = Locale.of("es", "ES");
+        Locale localeJapao = Locale.of("ja", "JP");
+
+
 
         Calendar calendar = Calendar.getInstance();
 
