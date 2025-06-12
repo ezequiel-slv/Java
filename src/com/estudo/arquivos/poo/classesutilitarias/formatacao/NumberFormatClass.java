@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.classesutilitarias.date;
+package com.estudo.arquivos.poo.classesutilitarias.formatacao;
 
 import java.text.NumberFormat;
 import java.util.Locale;
