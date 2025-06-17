@@ -1,6 +1,6 @@
-package com.estudo.arquivos.poo.classesutilitarias.date.exercicios.teste;
+package com.estudo.arquivos.poo.classesutilitarias.parte2.exercicios.teste;
 
-import com.estudo.arquivos.poo.classesutilitarias.date.exercicios.dominio.LocaleDomain;
+import com.estudo.arquivos.poo.classesutilitarias.parte2.exercicios.dominio.LocaleDomain;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.classesutilitarias.strings;
+package com.estudo.arquivos.poo.classesutilitarias.parte1.strings;
 
 public class StringPrt02 {
     public static void main(String[] args) {

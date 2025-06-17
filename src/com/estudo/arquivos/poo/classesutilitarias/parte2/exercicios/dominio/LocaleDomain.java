@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.classesutilitarias.date.exercicios.dominio;
+package com.estudo.arquivos.poo.classesutilitarias.parte2.exercicios.dominio;
 
 import java.text.DateFormat;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.classesutilitarias.strings;
+package com.estudo.arquivos.poo.classesutilitarias.parte1.strings;
 
 import java.lang.StringBuilder;
 

@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.classesutilitarias.wrappers.test;
+package com.estudo.arquivos.poo.classesutilitarias.parte1.wrappers;
 
 import java.util.Scanner;
 
