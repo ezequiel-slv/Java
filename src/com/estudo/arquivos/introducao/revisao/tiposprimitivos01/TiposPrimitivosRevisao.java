@@ -1,12 +1,19 @@
 package com.estudo.arquivos.introducao.revisao.tiposprimitivos01;
 
+import java.util.Scanner;
+
 public class TiposPrimitivosRevisao {
     public static void main(String[] args) {
         //Exe01();
         //Exe02();
         //Exe03();
         //Exe04();
-        Exe05();
+        //Exe05();
+        //Exe06();
+        //Exe07();
+        //Exe08();
+        Exe09();
+        Exe10();
     }
     public static void Exe01(){
 
@@ -78,6 +85,55 @@ public class TiposPrimitivosRevisao {
 
         boolean isBigster = idade1 > idade2;
         System.out.println(isBigster);
+    }
+
+    public static void Exe06(){
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite sua idade: ");
+        int idade = entrada.nextInt();
+
+        System.out.println("Digite seu altura: ");
+        double altura = entrada.nextDouble();
+
+        System.out.println("Digite seu pesp: ");
+        double peso = entrada.nextDouble();
+
+        System.out.println("Idade: " + idade + " Anos");
+        System.out.printf("Altura: %.2f\n", altura);
+        System.out.println("Peso: " + peso + "Kg");
+    }
+
+    public static void Exe07(){
+        float pessoa1 = 1.60F;
+        float pessoa2 = 1.68F;
+        float pessoa3 = 1.86F;
+
+        float media = (pessoa1 + pessoa2 + pessoa3)/ 3;
+        System.out.printf("Média das alturas: %.2f\n", media);
+    }
+
+    public static void Exe08(){
+        double peso = 70;
+        double altura = 1.70;
+
+        double imc = peso/(altura * altura);
+        System.out.printf("IMC: %.2f\n", imc);
+    }
+
+    public static void Exe09(){
+        char a = 'A';
+        int aConv = a;
+        System.out.println(aConv);
+    }
+
+    public static void Exe10(){
+        String nome = "Ezequiel";
+        char sexo = 'M';
+        int idade = 23;
+        float altura = 1.70F;
+        double peso = 70;
+        long cpf = 62555292314L;
     }
 }
 
