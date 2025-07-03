@@ -6,11 +6,11 @@ public class EstruturasCondicionais01 {
         boolean condicao1 = idade >= 18;
 
         if (condicao1) {
-            System.out.println("Idade permitida para dirigir");
+            System.out.println("Permitido para dirigir");
         }
         //  ! nega a senteça retornando o contrario de verdadeiro caso a condição seja falsa
         if(! condicao1) {
-            System.out.println("Idade não permitida para dirigir");
+            System.out.println("Não permitido para dirigir");
         }
     }
 

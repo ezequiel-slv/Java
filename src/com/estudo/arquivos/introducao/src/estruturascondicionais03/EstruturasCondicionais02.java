@@ -24,9 +24,8 @@ public class EstruturasCondicionais02 {
 
         //operador ternário
         int alunos = 20;
-        String quantidade;
 
-        quantidade = alunos == 30 ? "sala cheia" : alunos < 30 && alunos == 15 ? "sala meia cheia" : "sala quase vazia";
+       String quantidade = alunos == 30 ? "sala cheia" : alunos < 30 && alunos == 15 ? "sala meia cheia" : "sala quase vazia";
         System.out.println(quantidade);
     }
 }

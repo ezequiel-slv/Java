@@ -4,15 +4,24 @@ import java.util.Scanner;
 
 public class TiposPrimitivosRevisao {
     public static void main(String[] args) {
-        //Exe01();
-        //Exe02();
-        //Exe03();
-        //Exe04();
-        //Exe05();
-        //Exe06();
-        //Exe07();
-        //Exe08();
+        Exe01();
+        System.out.println("----");
+        Exe02();
+        System.out.println("----");
+        Exe03();
+        System.out.println("----");
+        Exe04();
+        System.out.println("----");
+        Exe05();
+        System.out.println("----");
+        Exe06();
+        System.out.println("----");
+        Exe07();
+        System.out.println("----");
+        Exe08();
+        System.out.println("----");
         Exe09();
+        System.out.println("----");
         Exe10();
     }
     public static void Exe01(){
@@ -80,8 +89,13 @@ public class TiposPrimitivosRevisao {
     }
 
     public static void Exe05(){
-        int idade1 = 18;
-        int idade2 = 23;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite uma idade: ");
+        int idade1 = entrada.nextInt();
+
+        System.out.println("Digite outra idade: ");
+        int idade2 = entrada.nextInt();
 
         boolean isBigster = idade1 > idade2;
         System.out.println(isBigster);
@@ -122,8 +136,7 @@ public class TiposPrimitivosRevisao {
     }
 
     public static void Exe09(){
-        char a = 'A';
-        int aConv = a;
+        int aConv = 'A';
         System.out.println(aConv);
     }
 
@@ -134,6 +147,13 @@ public class TiposPrimitivosRevisao {
         float altura = 1.70F;
         double peso = 70;
         long cpf = 62555292314L;
+
+        System.out.println(nome);
+        System.out.println(idade);
+        System.out.println(sexo);
+        System.out.println(altura);
+        System.out.println(peso);
+        System.out.println(cpf);
     }
 }
 

@@ -8,9 +8,9 @@ public class EstruturasCondicionais03 {
         // 68,588 - 50%
 
         double salarioAnual = 75000;
-        double primeiraFaixa = 10 / 100;
-        double segundaFaixa = 37 / 100;
-        double terceiraFaixa = 50 / 100;
+        double primeiraFaixa = 0.1;
+        double segundaFaixa = 0.37;
+        double terceiraFaixa = 0.5;
         double valorImposto;
 
         if (salarioAnual <= 34712){

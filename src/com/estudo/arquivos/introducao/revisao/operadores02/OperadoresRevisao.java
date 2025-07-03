@@ -5,16 +5,27 @@ import java.util.Scanner;
 public class OperadoresRevisao {
     public static void main(String[] args) {
         Exe01();
+        System.out.println("-----");
         Exe02();
+        System.out.println("-----");
         Exe03();
+        System.out.println("-----");
         Exe04();
+        System.out.println("-----");
         Exe05();
+        System.out.println("-----");
         Exe06();
+        System.out.println("-----");
         Exe07();
+        System.out.println("-----");
         Exe08();
+        System.out.println("-----");
         Exe09();
+        System.out.println("-----");
         Exe10();
+        System.out.println("-----");
         Exe11();
+        System.out.println("-----");
         Exe12();
     }
 
@@ -57,7 +68,7 @@ public class OperadoresRevisao {
         System.out.println("Digite um número para dividir: ");
         int divisor = entrada.nextInt();
 
-        String saida = num % divisor == 5? "é divisível por 3 e 5" : "não é divisível por 3 e 5";
+        String saida = (num % divisor == 5 && num % divisor == 3)? "é divisível por 3 e 5" : "não é divisível por 3 e 5";
         System.out.println(saida);
     }
     public static void Exe05(){
