@@ -186,4 +186,40 @@ public class OperadoresRevisao {
         System.out.println(ferias);
     }
 
+    public static void Exe013(){
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um número: ");
+        double num1 = entrada.nextDouble();
+
+        System.out.println("Digite outro número: ");
+        double num2 = entrada.nextDouble();
+
+        if (num1 == 0){
+            System.out.println("Não é possivel divisão por zero");
+        } else if (num2 % num1 == 0) {
+            System.out.println(num2 + " é multiplo de "+ num1);
+        }else{
+            System.out.println(num2 + " não é multiplo de " + num1);
+        }
+    }
+
+    public static void Exe14(){
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite o tempo de experiência em meses: ");
+        double experiencia = entrada.nextDouble();
+
+        double salario = 3.200;
+        double reajuste1 = salario * 0.15;
+        double reajuste2 = salario * 0.05;
+        boolean condicao = experiencia > 36;
+
+        if (condicao){
+            System.out.println("Salário com reajuste: " + reajuste1);
+        }else{
+            System.out.println("Salário com reajuste: " + reajuste2);
+        }
+    }
+
 }
