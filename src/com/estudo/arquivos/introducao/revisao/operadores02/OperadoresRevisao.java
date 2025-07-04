@@ -5,28 +5,22 @@ import java.util.Scanner;
 public class OperadoresRevisao {
     public static void main(String[] args) {
         Exe01();
-        System.out.println("-----");
         Exe02();
-        System.out.println("-----");
         Exe03();
-        System.out.println("-----");
         Exe04();
-        System.out.println("-----");
         Exe05();
-        System.out.println("-----");
         Exe06();
-        System.out.println("-----");
         Exe07();
-        System.out.println("-----");
         Exe08();
-        System.out.println("-----");
         Exe09();
-        System.out.println("-----");
         Exe10();
-        System.out.println("-----");
         Exe11();
-        System.out.println("-----");
         Exe12();
+        Exe13();
+        Exe14();
+        Exe15();
+        Exe16();
+        Exe17();
     }
 
     public static void Exe01(){
@@ -186,7 +180,7 @@ public class OperadoresRevisao {
         System.out.println(ferias);
     }
 
-    public static void Exe013(){
+    public static void Exe13(){
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite um número: ");
@@ -202,6 +196,7 @@ public class OperadoresRevisao {
         }else{
             System.out.println(num2 + " não é multiplo de " + num1);
         }
+        entrada.close();
     }
 
     public static void Exe14(){
@@ -210,16 +205,74 @@ public class OperadoresRevisao {
         System.out.println("Digite o tempo de experiência em meses: ");
         double experiencia = entrada.nextDouble();
 
-        double salario = 3.200;
-        double reajuste1 = salario * 0.15;
-        double reajuste2 = salario * 0.05;
+        double salario = 3200;
+        double reajuste1 = salario * 1.15;
+        double reajuste2 = salario * 1.05;
         boolean condicao = experiencia > 36;
+        boolean condicao2 = experiencia < 36;
 
         if (condicao){
-            System.out.println("Salário com reajuste: " + reajuste1);
-        }else{
-            System.out.println("Salário com reajuste: " + reajuste2);
+            System.out.printf("Salário com reajuste: %.2f\n", reajuste1);
         }
+        if (condicao2){
+            System.out.printf("Salário com reajuste: %.2f\n", reajuste2);
+        }
+        entrada.close();
+    }
+
+    public static void Exe15(){
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite uma idade: ");
+        double idade = entrada.nextDouble();
+        entrada.nextLine();
+
+        System.out.println("Marque 's' caso esteja acompanhado ou 'n' caso não esteja: ");
+        String acompanhado = entrada.nextLine();
+
+        String saida = idade > 16 || acompanhado.equals("s") ? "liberado" : "negado";
+        System.out.println("Acesso " + saida);
+        entrada.close();
+    }
+
+    public static void Exe16(){
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite a nota 1: ");
+        double nota1 = entrada.nextDouble();
+
+        System.out.println("Digite a nota 2: ");
+        double nota2 = entrada.nextDouble();
+
+        System.out.println("Digite a nota 3: ");
+        double nota3 = entrada.nextDouble();
+
+        double np1 = 2;
+        double np2 = 3;
+        double np3 = 5;
+
+        nota1 *= np1;
+        nota2 *= np2;
+        nota3 *= np3;
+
+        double prodnotas = nota1 + nota2 + nota3;
+        double somapesos = np1 + np2 + np3;
+
+        double media = prodnotas / somapesos;
+        String saida = media >= 7 ? "Aprovado" : "Reprovado";
+        System.out.println("Situação do aluno: %.2f\n" + saida);
+        entrada.close();
+    }
+
+    public static void Exe17(){
+        int passos = 0;
+        passos += 1000;
+        passos += 1000;
+        passos += 1000;
+        passos -= 500;
+
+        System.out.println(passos + " passos");
+
     }
 
 }
