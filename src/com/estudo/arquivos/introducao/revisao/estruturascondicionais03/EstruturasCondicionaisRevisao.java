@@ -4,18 +4,19 @@ import java.util.Scanner;
 
 public class EstruturasCondicionaisRevisao {
     public static void main(String[] args) {
-        Exe01();
-        Exe02();
-        Exe03();
-        Exe04();
-        Exe05();
-        Exe06();
-        Exe07();
-        Exe08();
+        Scanner entrada = new Scanner(System.in);
+        exe01(entrada);
+        exe02(entrada);
+        exe03(entrada);
+        exe04(entrada);
+        exe05(entrada);
+        exe06(entrada);
+        exe07(entrada);
+        exe08(entrada);
+        entrada.close();
     }
 
-    public static void Exe01(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe01(Scanner entrada){
 
         System.out.println("Digite uma idade: ");
         int idade = entrada.nextInt();
@@ -30,8 +31,7 @@ public class EstruturasCondicionaisRevisao {
         }
     }
 
-    public static void Exe02(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe02(Scanner entrada){
 
         System.out.println("Digite um número: ");
         double num = entrada.nextDouble();
@@ -46,14 +46,13 @@ public class EstruturasCondicionaisRevisao {
         }
     }
 
-    public static void Exe03(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe03(Scanner entrada){
 
         System.out.println("Digite um número: ");
         double num = entrada.nextDouble();
 
         if (num > 0){
-            System.out.println("Positivo: ");
+            System.out.println("Positivo");
         } else if (num < 0) {
             System.out.println("Negativo");
         }else{
@@ -61,8 +60,7 @@ public class EstruturasCondicionaisRevisao {
         }
     }
 
-    public static void Exe04(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe04(Scanner entrada){
 
         System.out.println("Digite a primeira nota: ");
         double n1 = entrada.nextDouble();
@@ -84,18 +82,16 @@ public class EstruturasCondicionaisRevisao {
         }
     }
 
-    public static void Exe05(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe05(Scanner entrada){
 
         System.out.println("Digite um número: ");
         int num = entrada.nextInt();
 
-        String saida = num % 2 == 0 ? "é par" : "é impar";
+        String saida = num % 2 == 0 ? "é par" : "é ímpar";
         System.out.println(saida);
     }
 
-    public static void Exe06(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe06(Scanner entrada){
 
         System.out.println("Digite valor pago: ");
         int valor = entrada.nextInt();
@@ -104,8 +100,7 @@ public class EstruturasCondicionaisRevisao {
         System.out.println(saida);
     }
 
-    public static void Exe07(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe07(Scanner entrada){
 
         System.out.println("Digite a estação em que está (1-primavera, 2-verão, 3-outono, 4-inverno): ");
         int estacao = entrada.nextInt();
@@ -124,8 +119,7 @@ public class EstruturasCondicionaisRevisao {
         }
     }
 
-    public static void Exe08(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe08(Scanner entrada){
 
         System.out.println("Digite o valor de 1 a 12 para representar o mês: ");
         int mes = entrada.nextInt();
@@ -155,7 +149,7 @@ public class EstruturasCondicionaisRevisao {
                 break;
             case 12 : System.out.println("Dezembro");
                 break;
-            default: System.out.println("Número invãlido");
+            default: System.out.println("Número inválido");
                 break;
         }
     }
