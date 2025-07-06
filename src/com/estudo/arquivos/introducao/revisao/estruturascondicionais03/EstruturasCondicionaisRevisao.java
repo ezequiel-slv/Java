@@ -13,6 +13,8 @@ public class EstruturasCondicionaisRevisao {
         exe06(entrada);
         exe07(entrada);
         exe08(entrada);
+        exe09();
+        exe10(entrada);
         entrada.close();
     }
 
@@ -152,5 +154,42 @@ public class EstruturasCondicionaisRevisao {
             default: System.out.println("Número inválido");
                 break;
         }
+    }
+
+    public static void exe09(){
+        int temp = 20;
+        String saida = temp >= 30 ? "Clima quente" : "Clima ameno";
+        System.out.println(saida);
+    }
+
+    public static void exe10(Scanner entrada){
+        System.out.println("Digite um número: ");
+        double num1 = entrada.nextDouble();
+
+        System.out.println("Digite outro número: ");
+        double num2 = entrada.nextDouble();
+
+
+
+        System.out.println("Escolha um número para representar um operador (1 = (+), 2 = (-), 3 = (/), 4 = (*): ");
+        int calculo = entrada.nextInt();
+
+        switch (calculo){
+            case 1 :
+                System.out.println(num1 + num2);
+                break;
+            case 2 :
+                System.out.println(num1 - num2);
+                break;
+            case 3 :
+                System.out.println(num1 / num2);
+                break;
+            case 4 :
+                System.out.println(num1 * num2);
+                break;
+            default:
+                System.out.println("Número inválido");
+        }
+
     }
 }

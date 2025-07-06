@@ -8,6 +8,8 @@ public class EstDeRepDoWhileRevisao {
         exe01(entrada);
         exe02(entrada);
         exe03(entrada);
+        exe04(entrada);
+        exe05(entrada);
         entrada.close();
     }
 
@@ -67,6 +69,58 @@ public class EstDeRepDoWhileRevisao {
                 }
             }else {
                 System.out.println();
+            }
+        }while (true);
+    }
+
+    public static void exe04(Scanner entrada){
+        do {
+            System.out.println("Digite a primeira nota: ");
+            double nota1 = entrada.nextDouble();
+
+            System.out.println("Digite a segunda nota: ");
+            double nota2 = entrada.nextDouble();
+
+            System.out.println("Digite a terceira nota: ");
+            double nota3 = entrada.nextDouble();
+
+            boolean condNota1 = nota1 >= 0 && nota1 <=10;
+            boolean condNota2 = nota2 >= 0 && nota2 <=10;
+            boolean condNota3 = nota3 >= 0 && nota3 <=10;
+
+            double media = (nota1 + nota2 + nota3) / 3;
+
+            if (condNota1){
+                if (condNota2){
+                    if (condNota3){
+                        System.out.printf("Média: %.1f\n", media);
+                        break;
+                    }else{
+                        System.out.println("Número inválido");
+                    }
+                }else{
+                    System.out.println("Número inválido");
+                }
+            }else{
+                System.out.println("Número inválido");
+            }
+        }while (true);
+    }
+
+    public static void exe05(Scanner entrada){
+        do {
+            System.out.println("Digite 1 para startar: ");
+            int start = entrada.nextInt();
+
+            boolean condicao = start == 1;
+
+            if (condicao){
+                System.out.println("Olá mundo!");
+                System.out.println("Olá mundo!");
+                System.out.println("Olá mundo!");
+                System.out.println("Olá mundo!");
+                System.out.println("Olá mundo!");
+                break;
             }
         }while (true);
     }
