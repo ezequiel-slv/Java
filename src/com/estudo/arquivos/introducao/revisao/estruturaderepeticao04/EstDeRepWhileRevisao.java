@@ -2,7 +2,7 @@ package com.estudo.arquivos.introducao.revisao.estruturaderepeticao04;
 
 import java.util.Scanner;
 
-public class EstruturaDeRepeticaoRevisao {
+public class EstDeRepWhileRevisao {
     public static void main(String[] args) {
         exe01();
         exe02();
@@ -52,5 +52,15 @@ public class EstruturaDeRepeticaoRevisao {
             num --;
         }
         System.out.println("Resultado: " + resultado);
+    }
+
+    public static void exe05(){
+        int num = 1;
+        while (num <= 30){
+            if (num % 2 != 0){
+                System.out.println(num);
+            }
+            num++;
+        }
     }
 }
