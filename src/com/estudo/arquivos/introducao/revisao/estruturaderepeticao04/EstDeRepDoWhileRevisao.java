@@ -10,6 +10,8 @@ public class EstDeRepDoWhileRevisao {
         exe03(entrada);
         exe04(entrada);
         exe05(entrada);
+        exe06(entrada);
+        exe07(entrada);
         entrada.close();
     }
 
@@ -121,6 +123,50 @@ public class EstDeRepDoWhileRevisao {
                 System.out.println("Olá mundo!");
                 System.out.println("Olá mundo!");
                 break;
+            }
+        }while (true);
+    }
+
+    public static void exe06(Scanner entrada){
+
+        do {
+            System.out.println("1-Olá");
+            System.out.println("2-Ajuda");
+            System.out.println("0-Sair");
+            System.out.println("------");
+            System.out.println("Escolha uma opção: ");
+            int escolha = entrada.nextInt();
+
+            boolean condicao1 = escolha == 1;
+            boolean condicao2 = escolha == 2;
+            boolean condicao0 = escolha == 0;
+
+            if (condicao1){
+                System.out.println("Olá");
+            } else if (condicao2) {
+                System.out.println("Que ajuda você quer?");
+            } else if (condicao0) {
+                System.out.println("Programa encerrado");
+                break;
+            }else {
+                System.out.println("Número inválido");
+            }
+        }while (true);
+    }
+
+    public static void exe07(Scanner entrada){
+
+        do {
+            System.out.println("Digite um número positivo: ");
+            int num = entrada.nextInt();
+
+            boolean condicao = num >= 0;
+
+            if (condicao){
+                System.out.println("Valor válido!");
+                break;
+            }else {
+                System.out.println("Valor inválido!");
             }
         }while (true);
     }

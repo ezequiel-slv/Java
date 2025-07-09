@@ -4,10 +4,15 @@ import java.util.Scanner;
 
 public class EstDeRepWhileRevisao {
     public static void main(String[] args) {
-        exe01();
-        exe02();
-        exe03();
-        exe04();
+        Scanner entrada = new Scanner(System.in);
+        //exe01();
+        //exe02();
+        //exe03(entrada);
+        //exe04();
+        //exe05();
+        //exe06(entrada);
+        exe07(entrada);
+        entrada.close();
     }
 
     public static void exe01(){
@@ -28,8 +33,7 @@ public class EstDeRepWhileRevisao {
         }
     }
 
-    public static void exe03(){
-        Scanner entrada = new Scanner(System.in);
+    public static void exe03(Scanner entrada){
 
         while (true){
             System.out.println("Digite um número: ");
@@ -63,4 +67,35 @@ public class EstDeRepWhileRevisao {
             num++;
         }
     }
+
+    public static void exe06(Scanner entrada){
+        int numero; int soma = 0;
+        System.out.println("Número um número: ");
+        numero = entrada.nextInt();
+
+        while (numero != 0){
+            soma += numero;
+            System.out.println("Digite outro número: ");
+            numero = entrada.nextInt();
+        }
+        System.out.println(soma);
+    }
+
+    public static void exe07(Scanner entrada){
+
+        while (true){
+            System.out.println("Digite a senha: ");
+            String senha = entrada.nextLine();
+
+            boolean senhaCorreta = senha.equals("123");
+
+            if (senhaCorreta){
+                System.out.println("Senha correta!");
+                break;
+            }else {
+                System.out.println("Senha inválida! Tente novamente.");
+            }
+        }
+    }
 }
+
