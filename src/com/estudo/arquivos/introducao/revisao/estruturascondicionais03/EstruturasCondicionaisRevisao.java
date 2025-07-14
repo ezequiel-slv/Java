@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class EstruturasCondicionaisRevisao {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        /*
         exe01(entrada);
         exe02(entrada);
         exe03(entrada);
@@ -13,8 +14,13 @@ public class EstruturasCondicionaisRevisao {
         exe06(entrada);
         exe07(entrada);
         exe08(entrada);
-        exe09();
+        exe09(entrada);
         exe10(entrada);
+        exe11(entrada);
+        exe12(entrada);
+        exe13(entrada);
+        */
+        exe14(entrada);
         entrada.close();
     }
 
@@ -156,8 +162,10 @@ public class EstruturasCondicionaisRevisao {
         }
     }
 
-    public static void exe09(){
-        int temp = 20;
+    public static void exe09(Scanner entrada){
+        System.out.println("Digite a tempetaruta: ");
+        int temp = entrada.nextInt();
+
         String saida = temp >= 30 ? "Clima quente" : "Clima ameno";
         System.out.println(saida);
     }
@@ -192,4 +200,98 @@ public class EstruturasCondicionaisRevisao {
         }
 
     }
+
+    public static void exe11(Scanner entrada){
+
+        System.out.println("Digite o valor do lado 1: ");
+        int lado1 = entrada.nextInt();
+
+        System.out.println("Digite o valoe do lado 2: ");
+        int lado2 = entrada.nextInt();
+
+        System.out.println("Digite o valor do lado 3: ");
+        int lado3 = entrada.nextInt();
+
+        int media = (lado1 + lado2 + lado2)/3;
+
+        boolean equilatero = lado1 == media && lado2 == media && lado3 == media;
+
+        boolean isosceles = lado1 == lado2 || lado1 == lado3 || lado2 == lado3;
+
+
+        if (equilatero){
+            System.out.println("Triângulo equilatero");
+        } else if (isosceles) {
+            System.out.println("Triângulo isósceles");
+        } else {
+            System.out.println("Triângulo escaleno");
+        }
+    }
+
+    public static void exe12(Scanner entrada){
+
+        System.out.println("Digite a altura: ");
+        double altura = entrada.nextDouble();
+
+        System.out.println("Digite o peso: ");
+        double peso = entrada.nextDouble();
+
+        double imc = peso / (altura * altura);
+
+        if (imc < 18.5){
+            System.out.println("Abaixo do peso");
+        }
+        if (imc >= 18.5 && imc <= 24.9){
+            System.out.println("Peso normal");
+        }
+        if (imc >= 25 && imc <= 29.9){
+            System.out.println("Sobrepeso");
+        }
+        if (imc >= 30){
+            System.out.println("Obesidade");
+        }
+    }
+
+    public static void exe13(Scanner entrada){
+        System.out.println("Digite um número: ");
+        int num = entrada.nextInt();
+
+        if (num == 0){
+            System.out.println("é igual a zero");
+        }else if (num % 2 == 0){
+            System.out.println("é par");
+        }else {
+            System.out.println("é impar");
+        }
+    }
+
+    public static void exe14(Scanner entrada){
+        System.out.println("Digite o valor da compra: ");
+        double valor = entrada.nextDouble();
+
+        System.out.println("Escolha uma categoria (1 para comum, 2 para associado, 3 para VIP): ");
+        int categoria = entrada.nextInt();
+
+
+        boolean comum = categoria == 1;
+        double comumCalculo = valor * 1;
+
+        boolean associado = categoria == 2;
+        double associadoCalculo = valor * 0.9;
+
+        boolean vip = valor == 3;
+        double vipCalculo = categoria * 0.8;
+
+        if (comum){
+            System.out.println(comumCalculo);
+        } else if (associado) {
+            System.out.println(associadoCalculo);
+        } else if (vip) {
+            System.out.println(vipCalculo);
+        } else {
+            System.out.println("Número inválido");
+        }
+    }
+
+    
 }
