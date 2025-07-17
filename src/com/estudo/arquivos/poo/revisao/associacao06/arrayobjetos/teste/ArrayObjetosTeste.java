@@ -1,6 +1,6 @@
-package com.estudo.arquivos.poo.revisao.associacao06.teste;
+package com.estudo.arquivos.poo.revisao.associacao06.arrayobjetos.teste;
 
-import com.estudo.arquivos.poo.revisao.associacao06.dominio.ArrayObjetos;
+import com.estudo.arquivos.poo.revisao.associacao06.arrayobjetos.dominio.ArrayObjetos;
 
 public class ArrayObjetosTeste {
     public static void main(String[] args) {
