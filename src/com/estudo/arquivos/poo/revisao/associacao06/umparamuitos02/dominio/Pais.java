@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.revisao.associacao06.umparamuitos.dominio;
+package com.estudo.arquivos.poo.revisao.associacao06.umparamuitos02.dominio;
 
 import java.util.ArrayList;
 import java.util.List;

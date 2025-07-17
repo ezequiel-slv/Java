@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.revisao.associacao06.umparamuitos.dominio;
+package com.estudo.arquivos.poo.revisao.associacao06.umparamuitos02.dominio;
 
 public class Estado {
     private String nome;

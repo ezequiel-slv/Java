@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.revisao.associacao06.arrayobjetos.dominio;
+package com.estudo.arquivos.poo.revisao.associacao06.arrayobjetos01.dominio;
 
 public class ArrayObjetos {
     private String pais;

@@ -1,7 +1,7 @@
-package com.estudo.arquivos.poo.revisao.associacao06.umparamuitos.teste;
+package com.estudo.arquivos.poo.revisao.associacao06.umparamuitos02.teste;
 
-import com.estudo.arquivos.poo.revisao.associacao06.umparamuitos.dominio.Estado;
-import com.estudo.arquivos.poo.revisao.associacao06.umparamuitos.dominio.Pais;
+import com.estudo.arquivos.poo.revisao.associacao06.umparamuitos02.dominio.Estado;
+import com.estudo.arquivos.poo.revisao.associacao06.umparamuitos02.dominio.Pais;
 
 public class PaisTeste {
     public static void main(String[] args) {
