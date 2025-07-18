@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class EstDeRepDoWhileRevisao {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        exe01(entrada);
-        exe02(entrada);
-        exe03(entrada);
-        exe04(entrada);
-        exe05(entrada);
-        exe06(entrada);
-        exe07(entrada);
+        //exe01(entrada);
+        //exe02(entrada);
+        //exe03(entrada);
+        //exe04(entrada);
+        //exe05(entrada);
+        //exe06(entrada);
+        //exe07(entrada);
+        //exe08(entrada);
+        exe09(entrada);
         entrada.close();
     }
 
@@ -167,6 +169,47 @@ public class EstDeRepDoWhileRevisao {
                 break;
             }else {
                 System.out.println("Valor inválido!");
+            }
+        }while (true);
+    }
+
+    public static void exe08(Scanner entrada){
+
+        do {
+            System.out.println("Digite a senha: ");
+            String senha = entrada.nextLine();
+
+            boolean condicao = senha.equals("java123");
+
+            if (condicao){
+                System.out.println("Senha correta!");
+                break;
+            }else {
+                System.out.println("Senha incorreta! Tente novamente.");
+            }
+
+        }while (true);
+    }
+
+    public static void exe09(Scanner entrada){
+
+        do {
+            System.out.println("Escolha : 1-Opção A, 2-Opção B, 3-Sair: ");
+            int menu = entrada .nextInt();
+
+            boolean condicao1 = menu == 1;
+            boolean condicao2 = menu == 2;
+            boolean condicao3 = menu == 3;
+
+            if (condicao1){
+                System.out.println("Opção A");
+            } else if (condicao2){
+                System.out.println("Opção B");
+            }else if (condicao3){
+                System.out.println("Programa finalizado!");
+                break;
+            }else {
+                System.out.println("Número inválido!");
             }
         }while (true);
     }

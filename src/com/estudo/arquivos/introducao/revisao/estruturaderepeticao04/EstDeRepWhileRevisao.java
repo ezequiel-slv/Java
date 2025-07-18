@@ -11,7 +11,9 @@ public class EstDeRepWhileRevisao {
         //exe04();
         //exe05();
         //exe06(entrada);
-        exe07(entrada);
+        //exe07(entrada);
+        //exe08();
+        exe09(entrada);
         entrada.close();
     }
 
@@ -96,6 +98,32 @@ public class EstDeRepWhileRevisao {
                 System.out.println("Senha inválida! Tente novamente.");
             }
         }
+    }
+
+    public static void exe08(){
+        int num = 0;
+
+        while (num < 100){
+            num++;
+            System.out.println(num);
+        }
+    }
+
+    public static void exe09(Scanner entrada){
+        int numero;
+        int soma = 0;
+
+        System.out.println("Digite um número (negativo para sair): ");
+        numero = entrada.nextInt();
+
+        while (numero >= 0){
+            soma += numero;
+
+            System.out.println("Digite outro número: (negativo para sair): ");
+            numero = entrada.nextInt();
+        }
+
+        System.out.println("Números somados: " + soma);
     }
 }
 
