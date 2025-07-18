@@ -5,11 +5,15 @@ import java.util.Scanner;
 public class EstDeRepForRevisao {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        //exe01();
-        //exe02(entrada);
-        //exe03();
-        //exe04();
+        exe01();
+        exe02(entrada);
+        exe03();
+        exe04();
         exe05();
+        exe06();
+        exe07(entrada);
+        exe08(entrada);
+        exe09(entrada);
         entrada.close();
     }
 
@@ -70,5 +74,68 @@ public class EstDeRepForRevisao {
             a = b;
             b = c;
         }
+    }
+
+    public static void exe06(){
+        for (int i = 0; i <= 100; i+=2){
+            System.out.println(i);
+        }
+    }
+
+    public static void exe07(Scanner entrada){
+        System.out.println("Digite um número: ");
+        int num = entrada.nextInt();
+
+        System.out.println("Escolha um operador: 1 = +, 2 = -, 3 = *, 4 = /: ");
+        int op = entrada.nextInt();
+
+        for (int i = 1; i <= 10; i++){
+            switch (op){
+                case 1 :
+                    System.out.println(i + " + " + num + " = " + (i + num) );
+                    break;
+                case 2 :
+                    System.out.println(i + " - " + num + " = " + (i - num) );
+                    break;
+                case 3 :
+                    System.out.println(i + " x " + num + " = " + (i * num) );
+                    break;
+                case 4 :
+                    System.out.println(i + " : " + num + " = " + (double) (i / num) );
+                    break;
+                default:
+                    System.out.println("Número inválido!");
+            }
+        }
+    }
+
+    public static void exe08(Scanner entrada){
+        System.out.println("Digite um número: ");
+        int num = entrada.nextInt();
+
+        int soma;
+        int a = 0;
+        for (int i = 0; i <= num; i++){
+            soma = a += i;
+            System.out.println(soma);
+        }
+    }
+
+    public static void exe09(Scanner entrada){
+        System.out.println("Digite um número: ");
+        int num = entrada.nextInt();
+
+        if (num < 0){
+            System.out.println("Número inválido!");
+            return;
+        }
+
+        int fatorial = 1;
+
+        for (int i = num; i > 0; i--){
+            fatorial *= i;
+
+        }
+        System.out.println(fatorial);
     }
 }
