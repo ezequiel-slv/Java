@@ -2,7 +2,7 @@ package com.estudo.arquivos.poo.revisao.associacao06.muitospraum03.dominio;
 
 public class Escola {
     private String nome;
-    private Professor[] professors;
+    private final Professor[] professors;
 
     public void imprimir(){
         System.out.println("Escola: " + this.nome);
@@ -23,13 +23,5 @@ public class Escola {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public Professor[] getProfessors() {
-        return professors;
-    }
-
-    public void setProfessors(Professor[] professors) {
-        this.professors = professors;
     }
 }
