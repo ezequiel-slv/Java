@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.revisao.heranca08.dominio;
+package com.estudo.arquivos.poo.revisao.heranca08.dominio.subdominio2;
 
 public class Pessoa {
     protected String nome;
@@ -6,8 +6,6 @@ public class Pessoa {
     protected char sexo;
     protected long cpf;
     protected Endereco endereco;
-
-
     public void imprimir2(){
         System.out.println("------------");
         System.out.println("Nome: " + this.nome);

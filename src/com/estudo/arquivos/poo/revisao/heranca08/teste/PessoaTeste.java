@@ -1,9 +1,9 @@
 package com.estudo.arquivos.poo.revisao.heranca08.teste;
 
-import com.estudo.arquivos.poo.revisao.heranca08.dominio.Endereco;
-import com.estudo.arquivos.poo.revisao.heranca08.dominio.Funcionario;
+import com.estudo.arquivos.poo.revisao.heranca08.dominio.subdominio2.Endereco;
+import com.estudo.arquivos.poo.revisao.heranca08.dominio.subdominio2.Funcionario;
 
-public class HerancaTeste {
+public class PessoaTeste {
     public static void main(String[] args) {
         Endereco endereco = new Endereco();
         endereco.setRua("Rua A, 1000");

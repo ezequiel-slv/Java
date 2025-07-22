@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.revisao.heranca08.dominio;
+package com.estudo.arquivos.poo.revisao.heranca08.dominio.subdominio2;
 
 public class Funcionario extends Pessoa{
     private double salario;
