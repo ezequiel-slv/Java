@@ -6,25 +6,27 @@ public class RevisaoArray {
     }
 
     public static void exe01(){
-        int[] venda = new int[12];
+        String[] meses = {"Janeiro", "Fevereiro", "Março",
+                "Abril", "Maio", "Junho",
+                "Julho", "Agosto", "Setembro",
+                "Outubro", "Novembro", "Dezembro"};
 
-        venda[0] = 40;
-        venda[1] = 32;
-        venda[2] = 55;
-        venda[3] = 123;
-        venda[4] = 89;
-        venda[5] = 45;
-        venda[6] = 67;
-        venda[7] = 54;
-        venda[8] = 140;
-        venda[9] = 212;
-        venda[10] = 134;
-        venda[11] = 231;
+        int[] vendas = {40, 32, 55, 123, 89, 45, 67, 54, 140, 212, 134, 231};
 
         int soma = 0;
-        for (int vendas : venda){
-            soma +=vendas;
+        int media = 0;
+
+        for (int i = 0; i < vendas.length; i++) {
+            System.out.println(meses[i] + " | " + vendas[i]);
         }
+
+        for (int venda : vendas){
+            soma +=venda;
+            media = soma / 12;
+        }
+        System.out.println("--------");
         System.out.println("Soma de vendas no ano: " + soma);
+        System.out.println("--------");
+        System.out.println("Média: " + media);
     }
 }
