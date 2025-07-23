@@ -1,7 +1,6 @@
 package com.estudo.arquivos.poo.revisao.estatico05.metodoestatico03.dominio;
 
 public class Calculadora {
-
     public static void somar(double num1, double num2){
         System.out.println("Soma " + (num1 + num2));
     }
