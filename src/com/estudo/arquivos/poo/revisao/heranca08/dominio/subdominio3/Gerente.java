@@ -9,6 +9,7 @@ public class Gerente extends Funcionario{
         System.out.println("Departamento: " + this.departamento);
         System.out.println("Bônus do mês: " + this.bonus);
     }
+
     public String getDepartamento() {
         return departamento;
     }
