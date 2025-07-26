@@ -19,11 +19,5 @@ public class EmpresaTeste {
             funcionario.setEmpresa(empresa);
             funcionario.imprimir();
         }
-
-
-
-
-
-
     }
 }
