@@ -6,7 +6,8 @@ public class EmpresaTeste {
     public static void main(String[] args) {
         Empresa empresa = new Empresa();
 
-        empresa.FUNCIONARIO.setNome("Ezequiel");
+        empresa.FUNCIONARIO.setNome("Ezy");
         empresa.FUNCIONARIO.imprime();
+        //System.out.println(empresa.FUNCIONARIO); chama pelo toString
     }
 }
