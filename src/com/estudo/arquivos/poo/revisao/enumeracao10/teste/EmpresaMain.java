@@ -15,8 +15,8 @@ public class EmpresaMain {
         funcionario.setCpf("253.453.523-32");
         funcionario.setSexo('M');
         funcionario.setEmpresa(empresa);
-        funcionario.setSetor(Setor.TECNOLOGIADAINFORMACAO);
-        funcionario.setSalario(3500);
+        funcionario.setSetor(Setor.TI);
+        funcionario.setSalario(4000);
 
         funcionario.imprimir();
     }

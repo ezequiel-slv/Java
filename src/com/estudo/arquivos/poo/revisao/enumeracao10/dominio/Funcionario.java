@@ -9,9 +9,12 @@ public class Funcionario extends Pessoa{
 
     public void imprimir(){
         super.imprimir();
-        System.out.println("Nome da empresa: " + empresa.getNome());
-        System.out.println("Setor: " + setor);
-        System.out.println("Salário: " + this.salario);
+        String saida = empresa != null? empresa.getNome() : "Nome da empresa não informado";
+        System.out.println("Nome da empresa: " + saida);
+        String saida2 = setor != null? setor.toString() : "Nome do setor não informado";
+        System.out.println(saida2);
+        String saida3 = salario != 0.0? String.valueOf(salario) : "Salário não informado";
+        System.out.println("Salário: " + saida3);
     }
 
     public double getSalario() {
