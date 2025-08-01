@@ -1,23 +1,20 @@
 package com.estudo.arquivos.poo.revisao.enumeracao10.teste;
 
-import com.estudo.arquivos.poo.revisao.enumeracao10.dominio.Empresa;
-import com.estudo.arquivos.poo.revisao.enumeracao10.dominio.Funcionario;
-import com.estudo.arquivos.poo.revisao.enumeracao10.dominio.Setor;
+import com.estudo.arquivos.poo.revisao.enumeracao10.dominio.*;
 
 public class EmpresaMain {
     public static void main(String[] args) {
-        Empresa empresa = new Empresa();
-        empresa.setNome("Master Consultoria");
+        Empresa empresa = new Empresa("Master Consultoria");
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Ezequiel");
-        funcionario.setIdade(23);
-        funcionario.setCpf("253.453.523-32");
-        funcionario.setSexo('M');
-        funcionario.setEmpresa(empresa);
-        funcionario.setSetor(Setor.TI);
-        funcionario.setSalario(4000);
-
+        Funcionario funcionario = new Funcionario("Ezequiel", 23, "253.453.523-32", 'M', 4000, empresa, Setor.TI);
         funcionario.imprimir();
+
+        System.out.println("--------");
+
+        Cliente cliente1 = new Cliente("João", 18, "565.233.090-33", 'M', TipoCliente.PESSOA_FISICA, TipoPagamento.DEBITO);
+        cliente1.imprimir();
+
+
+
     }
 }

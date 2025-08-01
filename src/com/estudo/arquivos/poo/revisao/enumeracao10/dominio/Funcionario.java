@@ -9,7 +9,7 @@ public class Funcionario extends Pessoa{
 
     public void imprimir(){
         super.imprimir();
-        String saida = empresa != null? empresa.getNome() : "Nome da empresa não informado";
+        String saida = empresa != null? empresa.toString(): "Nome da empresa não informado";
         System.out.println("Nome da empresa: " + saida);
         String saida2 = setor != null? setor.toString() : "Nome do setor não informado";
         System.out.println(saida2);
@@ -17,27 +17,10 @@ public class Funcionario extends Pessoa{
         System.out.println("Salário: " + saida3);
     }
 
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
+    public Funcionario(String nome, int idade, String cpf, char sexo, double salario, Empresa empresa, Setor setor) {
+        super(nome, idade, cpf, sexo);
         this.salario = salario;
-    }
-
-    public Empresa getEmpresa() {
-        return empresa;
-    }
-
-    public void setEmpresa(Empresa empresa) {
         this.empresa = empresa;
-    }
-
-    public Setor getSetor() {
-        return setor;
-    }
-
-    public void setSetor(Setor setor) {
         this.setor = setor;
     }
 }
