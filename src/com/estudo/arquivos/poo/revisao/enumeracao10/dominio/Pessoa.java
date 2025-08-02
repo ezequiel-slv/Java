@@ -1,10 +1,10 @@
 package com.estudo.arquivos.poo.revisao.enumeracao10.dominio;
 
 public class Pessoa {
-    private String nome;
-    private int idade;
-    private String cpf;
-    private char sexo;
+    private final String nome;
+    private final int idade;
+    private final String cpf;
+    private final char sexo;
 
     public Pessoa(String nome, int idade, String cpf, char sexo) {
         this.nome = nome;
