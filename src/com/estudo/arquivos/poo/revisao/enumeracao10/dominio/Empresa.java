@@ -11,4 +11,8 @@ public class Empresa {
     public String toString() {
         return nome;
     }
+
+    public String getNome() {
+        return nome;
+    }
 }

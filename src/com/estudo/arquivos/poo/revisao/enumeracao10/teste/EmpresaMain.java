@@ -11,10 +11,9 @@ public class EmpresaMain {
 
         System.out.println("--------");
 
-        Cliente cliente1 = new Cliente("João", 18, "565.233.090-33", 'M', TipoCliente.PESSOA_FISICA, TipoPagamento.DEBITO);
+        Cliente cliente1 = new Cliente("João", 18, "565.233.090-33",
+                'M', TipoCliente.PESSOA_JURIDICA, TipoPagamento.DEBITO, empresa, funcionario);
         cliente1.imprimir();
-
-
 
     }
 }
