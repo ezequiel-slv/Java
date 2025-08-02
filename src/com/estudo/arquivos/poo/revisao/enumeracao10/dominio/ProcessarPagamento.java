@@ -6,7 +6,7 @@ public class ProcessarPagamento {
     private TipoPagamento tipoPagamento;
 
     private Cliente cliente;
-    private static int codigoProduto;
+    private final static int codigoProduto;
 
     static {
         System.out.println("----------");
@@ -22,11 +22,7 @@ public class ProcessarPagamento {
         System.out.println("----------");
         System.out.println("Contratante: " + cliente.getNome());
         System.out.println("Tipo de pagamento: " + tipoPagamento.toString());
-    }
-
-    @Override
-    public String toString() {
-        return "contratante: " + cliente.getNome() + " | " + "Tipo de pagamento: " + TipoPagamento.DEBITO;
+        System.out.println("Valor pago: " + TipoPagamento.DEBITO.calcularDesconto(500));
     }
 
     public Cliente getCliente() {
@@ -35,5 +31,13 @@ public class ProcessarPagamento {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
+    }
+
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 }

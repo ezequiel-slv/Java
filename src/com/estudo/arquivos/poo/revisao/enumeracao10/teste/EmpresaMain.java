@@ -13,12 +13,12 @@ public class EmpresaMain {
         System.out.println("--------");
 
         Cliente cliente1 = new Cliente("João", 18, "565.233.090-33", 'M',
-                TipoCliente.PESSOA_JURIDICA, empresa, funcionario);
+                TipoCliente.clientePorRelatorio("Pessoa Física"), empresa, funcionario);
         cliente1.imprimir();
 
         ProcessarPagamento pg = new ProcessarPagamento();
         pg.setCliente(cliente1);
-        System.out.println(pg.toString());
-        System.out.println(TipoPagamento.DEBITO.calcularDesconto(500));
+        pg.setTipoPagamento(TipoPagamento.DEBITO);
+        pg.imprime();
     }
 }
