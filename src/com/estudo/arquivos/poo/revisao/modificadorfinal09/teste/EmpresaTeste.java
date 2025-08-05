@@ -7,6 +7,7 @@ public class EmpresaTeste {
         Empresa empresa = new Empresa();
 
         empresa.FUNCIONARIO.setNome("Ezy");
+        empresa.FUNCIONARIO.setNome("Ezequiel");
         empresa.FUNCIONARIO.imprime();
         //System.out.println(empresa.FUNCIONARIO); chama pelo toString
     }
