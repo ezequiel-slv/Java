@@ -1,6 +1,7 @@
 package com.estudo.arquivos.poo.corepoo.interfac12.teste;
 
 import com.estudo.arquivos.poo.corepoo.interfac12.dominio2.Funcionario;
+import com.estudo.arquivos.poo.corepoo.interfac12.dominio2.VerificadorDeAusencia;
 
 public class FuncionarioTeste {
     public static void main(String[] args) {
@@ -11,5 +12,6 @@ public class FuncionarioTeste {
         funcionario.setSalario(3000);
         funcionario.imprime();
         funcionario.validarPresenca();
+        VerificadorDeAusencia.datasessao();
     }
 }
