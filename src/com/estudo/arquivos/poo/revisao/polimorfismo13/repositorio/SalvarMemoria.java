@@ -1,6 +1,4 @@
-package com.estudo.arquivos.poo.revisao.polimorfismo13.dominio;
-
-import com.estudo.arquivos.poo.revisao.polimorfismo13.repositorio.Repositorio;
+package com.estudo.arquivos.poo.revisao.polimorfismo13.repositorio;
 
 public class SalvarMemoria implements Repositorio {
     @Override
