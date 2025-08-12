@@ -3,13 +3,6 @@ package com.estudo.arquivos.poo.revisao.polimorfismo13.dominio2;
 import java.util.Scanner;
 
 public class ConcorrenteUm extends Pessoa implements AnotarNumeros{
-
-    @Override
-    public void imprimir() {
-        System.out.println("--------");
-        super.imprimir();
-    }
-
     @Override
     public void addInformacoes() {
         super.addInformacoes();

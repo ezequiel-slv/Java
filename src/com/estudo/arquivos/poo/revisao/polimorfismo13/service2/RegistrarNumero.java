@@ -5,6 +5,9 @@ import com.estudo.arquivos.poo.revisao.polimorfismo13.dominio2.Pessoa;
 public class RegistrarNumero {
     public static void armazenarNumeros(Pessoa pessoa){
         String numeros = pessoa.numeros();
+        System.out.println("Nome: " + pessoa.getNome());
+        System.out.println("Idade: " + pessoa.getIdade());
+        System.out.println("CPF: " + pessoa.getCpf());
         System.out.println("Seus números são: " + numeros);
     }
 }

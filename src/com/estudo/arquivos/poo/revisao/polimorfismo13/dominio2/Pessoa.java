@@ -8,11 +8,6 @@ public abstract class Pessoa implements AnotarNumeros{
     protected int idade;
     protected String cpf;
 
-    public void imprimir(){
-        System.out.println("Nome: " + this.getNome());
-        System.out.println("Idade: " + this.getIdade());
-        System.out.println("CPF: " + this.getCpf());
-    }
     public void addInformacoes() {
         System.out.println("Digite seu nome: ");
         String nome = entrada.nextLine();
