@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.corepoo.exception14.RuntimeException;
+package com.estudo.arquivos.poo.corepoo.exception14.runtimeexception;
 
 import com.estudo.arquivos.poo.corepoo.exception14.dominio.Animal;
 import com.estudo.arquivos.poo.corepoo.exception14.dominio.Cachorro;

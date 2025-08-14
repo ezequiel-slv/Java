@@ -1,6 +1,6 @@
-package com.estudo.arquivos.poo.corepoo.exception14.RuntimeException;
+package com.estudo.arquivos.poo.revisao.exception14.runtime;
 
-import com.estudo.arquivos.poo.corepoo.exception14.dominio.MetodoNaoSuportado;
+import com.estudo.arquivos.poo.revisao.exception14.dominio.MetodoNaoSuportado;
 
 import java.util.Collections;
 import java.util.List;

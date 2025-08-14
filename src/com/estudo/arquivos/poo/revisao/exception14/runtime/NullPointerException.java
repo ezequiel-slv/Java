@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.corepoo.exception14.RuntimeException;
+package com.estudo.arquivos.poo.revisao.exception14.runtime;
 
 public class NullPointerException {
     public static void main(String[] args) {

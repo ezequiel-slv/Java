@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo.corepoo.exception14.RuntimeException;
+package com.estudo.arquivos.poo.corepoo.exception14.runtimeexception;
 
 import java.util.ArrayList;
 import java.util.List;
