@@ -4,6 +4,7 @@ public class Wrappers01 {
     public static void main(String[] args) {
         ValoresEmTipos();
         ValoresEmClasse();
+        AutoBoxingAndBoxing();
     }
 
     public static void ValoresEmTipos(){
@@ -32,4 +33,12 @@ public class Wrappers01 {
         Character characterC = 'E';
         Boolean booleanC = true;
     }
+
+    public static void AutoBoxingAndBoxing(){
+        Integer intC = 1; //autoboxing
+        int intT = intC; //boxing
+
+        System.out.println(intT);
+    }
+
 }
