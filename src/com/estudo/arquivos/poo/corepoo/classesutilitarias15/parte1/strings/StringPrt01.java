@@ -6,7 +6,6 @@ public class StringPrt01 {
         String nome2 = "Ezequiel";
         // Tanto a referência nome e nome2 vão apontar para a mesma String
 
-
         nome.concat(" Silva"); // Jeito errado
         nome = nome.concat(" Silva"); // Agora o nome vai apontar para o novo valor (nome + sobrenome)
         String nome3 = new String("Ezequiel"); //String encapsulada

@@ -22,10 +22,6 @@ public class StringBuilderClass {
         nome.delete(0,3);
         System.out.println(sub);
         System.out.println(nome);
-
-
-
-
     }
 
 }
