@@ -11,7 +11,10 @@ public class VarArgsRev02 {
     }
 
     public void subVarArgs(int...numeros){
+        int sub = 1000;
         for (int numero : numeros){
+            sub -= numero;
         }
+        System.out.println("Subtração: " + sub);
     }
 }
