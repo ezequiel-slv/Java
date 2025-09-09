@@ -3,7 +3,6 @@ package com.estudo.arquivos.poo03.revisao.estatico05.modificadorestatico02.domin
 public class Estacionamento {
     private static int vagasOcupadas;
     private static final int totalVagas = 100;
-
     public Estacionamento() {
         if (vagasOcupadas < totalVagas){
             vagasOcupadas++;
