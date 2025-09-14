@@ -1,8 +1,8 @@
 package com.estudo.arquivos.poo03.revisao.associacao06.umparamuitos02.dominio;
 
 public class Pessoa {
-    private String nome;
-    private Telefone[] telefones;
+    private final String nome;
+    private final Telefone[] telefones;
     private int totalTelefones;
 
     public Pessoa(String nome, int maxTelefones) {
