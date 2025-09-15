@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class EstruturasCondicionais04 {
     public static void main(String[] args) {
         Scanner semana = new Scanner (System.in);
-        byte diaSemana;
+
         System.out.println("Digite o dia da semana considerando 1 como segunda e assim por diante: ");
-        diaSemana = semana.nextByte();
+        byte diaSemana = semana.nextByte();
 
         switch (diaSemana) {
             case 1:

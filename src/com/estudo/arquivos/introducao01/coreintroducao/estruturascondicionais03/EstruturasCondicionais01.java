@@ -1,15 +1,19 @@
 package com.estudo.arquivos.introducao01.coreintroducao.estruturascondicionais03;
 
+import java.util.Scanner;
+
 public class EstruturasCondicionais01 {
     public static void main(String[] args) {
-        int idade = 20;
+        Scanner entrada = new Scanner(System.in);
+        int idade = entrada.nextInt();
+
         boolean condicao1 = idade >= 18;
 
         if (condicao1) {
             System.out.println("Permitido para dirigir");
         }
         //  ! nega a senteça retornando o contrario de verdadeiro caso a condição seja falsa
-        if(! condicao1) {
+        if(!condicao1) {
             System.out.println("Não permitido para dirigir");
         }
     }
