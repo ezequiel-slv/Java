@@ -1,4 +1,4 @@
-package com.estudo.arquivos.introducao01.revisao.estruturaderepeticao04;
+package com.estudo.arquivos.introducao01.revisao.whille;
 
 import java.util.Scanner;
 
