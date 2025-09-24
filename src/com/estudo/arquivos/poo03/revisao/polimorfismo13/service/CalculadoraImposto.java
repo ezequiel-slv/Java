@@ -9,7 +9,8 @@ public class CalculadoraImposto {
         System.out.println("Valor do produto: " + produto.getValor());
         System.out.printf("Imposto a ser pago: %.2f\n", imposto);
 
-        if (produto instanceof Margarina margarina){
+        if (produto instanceof Margarina){
+            Margarina margarina = (Margarina) produto;
             System.out.println("Data de validade: " + margarina.getDataValidade());
         }
     }
