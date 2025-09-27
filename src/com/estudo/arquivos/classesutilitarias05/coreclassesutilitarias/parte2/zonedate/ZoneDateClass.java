@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Map;
+import java.util.Set;
 
 public class ZoneDateClass {
     public static void main(String[] args) {
@@ -17,8 +18,13 @@ public class ZoneDateClass {
 
         System.out.println("--------");
 
-        ZoneId id = ZoneId.of("Asia/Tokyo");
-        System.out.println(id);
+        ZoneId jp = ZoneId.of("Asia/Tokyo");
+        System.out.println(jp);
+
+        System.out.println("--------");
+
+        ZonedDateTime br = ZonedDateTime.now(ZoneId.of("America/Sao_Paulo"));
+        System.out.println(br);
 
         System.out.println("--------");
 
@@ -27,7 +33,12 @@ public class ZoneDateClass {
 
         System.out.println("--------");
 
-        ZonedDateTime atZone = ldtNow.atZone(id);
+        ZonedDateTime atZone = ldtNow.atZone(jp);
         System.out.println(atZone);
+
+        System.out.println("--------");
+
+        Set<String> avaliable = ZoneId.getAvailableZoneIds();
+        System.out.println(avaliable);
     }
 }
