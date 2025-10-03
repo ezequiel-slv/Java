@@ -1,4 +1,4 @@
-package com.estudo.arquivos.classesutilitarias05.coreclassesutilitarias;
+package com.estudo.arquivos.classesutilitarias05.coreclassesutilitarias.parte2.resourcebundle;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
