@@ -1,6 +1,6 @@
 package com.estudo.arquivos.poo03.revisao.heranca08.dominio.subdominio5;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
@@ -11,9 +11,8 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public double calcSalario(double salario){
-        return salario;
-    }
+    public abstract double calcSalario();
+
     public void imprimir(){
         System.out.println("Nome: " + this.nome);
         System.out.println("CPF: " + this.cpf);

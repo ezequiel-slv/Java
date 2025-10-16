@@ -8,8 +8,10 @@ public class Vendedor extends Funcionario{
     }
 
     @Override
-    public double calcSalario(double salario) {
-        return super.calcSalario(salario) + (comissao);
+    public double calcSalario() {
+        double novoSalario = getSalario() + comissao;
+        setSalario(novoSalario);
+        return novoSalario;
     }
 
     @Override

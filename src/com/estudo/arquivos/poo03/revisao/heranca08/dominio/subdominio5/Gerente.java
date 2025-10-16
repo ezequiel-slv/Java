@@ -8,8 +8,10 @@ public class Gerente extends Funcionario{
     }
 
     @Override
-    public double calcSalario(double salario) {
-        return super.calcSalario(salario) + (salario * bonus);
+    public double calcSalario() {
+        double novoSalario = getSalario() + getSalario() * bonus;
+        setSalario(novoSalario);
+        return novoSalario;
     }
 
     @Override
