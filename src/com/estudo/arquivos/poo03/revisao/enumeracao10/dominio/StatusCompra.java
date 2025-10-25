@@ -6,7 +6,7 @@ public enum StatusCompra {
     ENVIADO("Enviando pedido"),
     ENTREGUE("Pedido entregue");
 
-    private String descricao;
+    private final String descricao;
     StatusCompra(String descricao) {
         this.descricao = descricao;
     }

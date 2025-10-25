@@ -1,9 +1,9 @@
 package com.estudo.arquivos.poo03.revisao.enumeracao10.dominio;
 
 public class Compra {
-    private String nome;
-    private double preco;
-    private StatusCompra statusCompra;
+    private final String nome;
+    private final double preco;
+    private final StatusCompra statusCompra;
 
     public Compra(String nome, double preco, StatusCompra statusCompra) {
         this.nome = nome;
