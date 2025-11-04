@@ -8,10 +8,18 @@ public abstract class Funcionario {
         this.nome = nome;
         this.salarioBase = salarioBase;
     }
-    public abstract void calcularBonus();
+    public abstract double calcularBonus();
 
     public void imprimir(){
         System.out.println("Nome: " + this.nome);
         System.out.println("Salário: " + this.salarioBase);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
     }
 }
