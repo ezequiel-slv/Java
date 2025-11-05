@@ -1,9 +1,9 @@
 package com.estudo.arquivos.poo03.revisao.classesabstratas11.dominio4;
 
-public class FuncionarioCLT extends Funcionario{
+public class FuncionarioPJ extends Funcionario{
     private Cargo cargo;
 
-    public FuncionarioCLT(String nome, double salarioBase, Cargo cargo) {
+    public FuncionarioPJ(String nome, double salarioBase, Cargo cargo) {
         super(nome, salarioBase);
         this.cargo = cargo;
     }
@@ -11,8 +11,8 @@ public class FuncionarioCLT extends Funcionario{
     @Override
     public void imprimir() {
         super.imprimir();
-        System.out.println("Cargo: " + cargo.getNomeCargo());
-        System.out.printf("Salário total: %.3f\n", calcularBonus());
+        System.out.println("Csrgo: " + cargo.getNomeCargo());
+        System.out.printf("Salário Total: %.3f\n", calcularBonus());
     }
 
     @Override

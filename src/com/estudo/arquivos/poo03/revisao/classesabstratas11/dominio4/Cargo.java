@@ -5,8 +5,8 @@ public enum Cargo {
     DESENVOLVEDOR("Desenvolvedor", 0.15),
     ESTAGIARIO("Estagiário", 0.05);
 
-    private String nomeCargo;
-    private double bonusCargo;
+    private final String nomeCargo;
+    private final double bonusCargo;
 
     Cargo(String nomeCargo, double bonusCargo) {
         this.nomeCargo = nomeCargo;

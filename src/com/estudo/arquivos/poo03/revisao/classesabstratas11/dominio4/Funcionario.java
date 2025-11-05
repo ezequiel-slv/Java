@@ -12,7 +12,7 @@ public abstract class Funcionario {
 
     public void imprimir(){
         System.out.println("Nome: " + this.nome);
-        System.out.println("Salário: " + this.salarioBase);
+        System.out.printf("Salário: %.3f\n", this.salarioBase);
     }
 
     public String getNome() {
