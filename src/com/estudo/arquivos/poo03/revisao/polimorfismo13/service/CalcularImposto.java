@@ -1,8 +1,8 @@
-package com.estudo.arquivos.poo03.revisao.polimorfismo13.service5;
+package com.estudo.arquivos.poo03.revisao.polimorfismo13.service;
 
-import com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio5.Fone;
-import com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio5.Garrafa;
-import com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio5.Mochila;
+import com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio.Fone;
+import com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio.Garrafa;
+import com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio.Mochila;
 
 public class CalcularImposto {
     public static void ImpostoFone(Fone fone){

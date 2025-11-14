@@ -1,7 +1,6 @@
 package com.estudo.arquivos.poo03.revisao.polimorfismo13.dominio;
 
-public abstract class Produto implements CalcularImposto {
-
+public abstract class Produto implements Taxavel{
     protected String nome;
     protected double valor;
 
@@ -14,15 +13,13 @@ public abstract class Produto implements CalcularImposto {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public double getValor() {
         return valor;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
+    public void imprime(){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Valor: " + this.valor);
+        System.out.printf("Imposto a ser pago: %.2f\n", calculaImposto());
     }
 }
