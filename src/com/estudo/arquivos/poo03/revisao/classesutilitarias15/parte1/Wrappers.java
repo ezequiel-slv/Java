@@ -1,4 +1,4 @@
-package com.estudo.arquivos.poo03.revisao.classesutilitarias15;
+package com.estudo.arquivos.poo03.revisao.classesutilitarias15.parte1;
 
 public class Wrappers {
     public static void main(String[] args) {
