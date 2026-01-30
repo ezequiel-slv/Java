@@ -3,7 +3,7 @@ package com.estudo.arquivos.classesutilitarias05.coreclassesutilitarias.parte2.r
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegexClass2 {
+public class RegexClass3 {
     public static void main(String[] args) {
         // \d = todos numero
         // \D = tudo que não for digito
@@ -11,20 +11,24 @@ public class RegexClass2 {
         // \S = todos os caracteres exeto os brancos
         // lw = a-zA-Z, digitos, _
         // lW = oposto de lw
-        String regex = "[a-z]";
+        // [] = usando para adicionar validações
+        String regex = "[a-zA-Z]";
         String texto = "ezequiel_silva_lima01@gmail.com ";
 
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(texto);
+        String regex2 = "0[xX][0-9a-fA-F]+";
+        String texto2 = "0x1A3F";
 
-        System.out.println("Texto:   " + texto);
+        Pattern pattern = Pattern.compile(regex2);
+        Matcher matcher = pattern.matcher(texto2);
+
+        System.out.println("Texto:   " + texto2);
 
         System.out.println("índice:  0123456789");
-        System.out.println("regex: "+regex);
+        System.out.println("regex: "+regex2);
 
         System.out.println("Posições encontradas");
         while (matcher.find()){
-            System.out.print(matcher.start() + " " + matcher.group()+"\n");
+            System.out.print(matcher.start() + " " + matcher.group() + "\n");
         }
     }
 }
