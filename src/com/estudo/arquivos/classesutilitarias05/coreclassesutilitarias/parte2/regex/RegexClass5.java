@@ -20,7 +20,7 @@ public class RegexClass5 {
         // |
         // $
         // . 1.3 = 123, 1@3
-        String regex = "([a-zA-Z0-9\\d\\S\\s])";
+        String regex = "([a-zA-Z0-9._+-]+@[a-zA-Z0-9]+\\.[a-zA-Z]{2,})";
         String texto = "luffy@hotmail.com, 123@jotaro@gmail.com, #@!zoro@mail.br, teste@gmail.com, sakura@mail ";
 
         Pattern pattern = Pattern.compile(regex);
