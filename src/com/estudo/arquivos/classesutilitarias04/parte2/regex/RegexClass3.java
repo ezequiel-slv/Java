@@ -18,13 +18,13 @@ public class RegexClass3 {
         String regex2 = "0[xX][0-9a-fA-F]+";
         String texto2 = "0x1A3F";
 
-        Pattern pattern = Pattern.compile(regex2);
-        Matcher matcher = pattern.matcher(texto2);
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(texto);
 
-        System.out.println("Texto:   " + texto2);
+        System.out.println("Texto:   " + texto);
 
         System.out.println("índice:  0123456789");
-        System.out.println("regex: "+regex2);
+        System.out.println("regex: "+regex);
 
         System.out.println("Posições encontradas");
         while (matcher.find()){

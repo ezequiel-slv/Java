@@ -12,7 +12,7 @@ public class EstruturasCondicionais01 {
         if (condicao1) {
             System.out.println("Permitido para dirigir");
         }
-        //  ! nega a senteça retornando o contrario de verdadeiro caso a condição seja falsa
+        //  ! nega a senteça retornando o contrário de verdadeiro caso a condição seja falsa
         if(!condicao1) {
             System.out.println("Não permitido para dirigir");
         }
