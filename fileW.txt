@@ -1,0 +1,2 @@
+Esse é um teste com o fileWriter, para escrever um texto
+Essa é a segunda linha do meu texto
