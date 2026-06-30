@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-public class File01 {
+public class FileTest01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try {
