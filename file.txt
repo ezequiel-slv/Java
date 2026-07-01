@@ -1,0 +1,2 @@
+Esse é um teste com o BufferedWriter, para escrever um texto
+Essa é a segunda linha do meu texto

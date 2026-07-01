@@ -7,8 +7,11 @@ public class FileReader03 {
     public static void main(String[] args) {
         File file = new File("fileW.txt");
         try(FileReader fr = new FileReader(file)){
+//
 //            char[] in = new char[60];
-//            fr.read(in);
+//            int size = fr.read();
+//
+//            System.out.println(size);
 //
 //            for (char c : in){
 //                System.out.println(c);
